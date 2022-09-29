@@ -77,6 +77,7 @@ FAQ
 * [Change system console](doc/faq/change_system_console.md)
 * [Change boot runlevel](doc/faq/change_boot_runlevel.md)
 * [Setup WiFi](doc/faq/setup_wifi.md)
+* [Segmentation fault when running glmark2](doc/faq/glmark2.md)
 
 Build 
 ------------------------------------------------------------------------------------
