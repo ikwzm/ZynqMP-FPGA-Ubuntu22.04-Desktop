@@ -89,6 +89,8 @@ root@ubuntu-fpga:/# echo "options lima of_400_id=arm,mali-400" > /etc/modprobe.d
 
 #### Change Display Manager gdm -> lightdm
 
+Please choose "lightdm" instead of "gdm"
+
 ```console
 root@ubuntu-fpga:/# apt install -y libpam-gnome-keyring libpam-kwallet5
 root@ubuntu-fpga:/# apt install -y lightdm lightdm-settings slick-greeter

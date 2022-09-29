@@ -24,6 +24,7 @@ echo "options lima of_400_id=arm,mali-400" > /etc/modprobe.d/lima.conf
 
 #### Change Display Manager gdm -> lightdm
 
+echo 'Please choose "lightdm" instead of "gdm"'
 apt install -y libpam-gnome-keyring libpam-kwallet5
 apt install -y lightdm lightdm-settings slick-greeter
 
