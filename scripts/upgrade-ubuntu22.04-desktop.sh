@@ -10,7 +10,7 @@ apt install -y ubuntu-desktop
 
 #### Install ZynqMP-FPGA-Xserver
 
-dpkg -i /home/fpga/debian/xserver-xorg-video-armsoc-xilinx_1.5-trial-12_arm64.deb
+dpkg -i /home/fpga/debian/xserver-xorg-video-armsoc-xilinx_1.5-trial-13_arm64.deb
 cp      /home/fpga/debian/xorg.conf /etc/X11
 
 #### Install libgl1-mesa for Lima

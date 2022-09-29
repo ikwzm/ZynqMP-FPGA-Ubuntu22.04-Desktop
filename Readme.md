@@ -86,7 +86,7 @@ Build
   + [Ultra96](doc/build/ultra96-boot.md)
   + [Ultra96-V2](doc/build/ultra96v2-boot.md)
 * Build Debian Package for ddx xlnx (xserver-xorg-video-armsoc-xilinx)
-  + https://github.com/ikwzm/xf86-video-armsoc-xilinx/tree/v1.5-trial-12
+  + https://github.com/ikwzm/xf86-video-armsoc-xilinx/tree/v1.5-trial-13
 * Build Debian Package for dri xlnx (libgl1-mesa-xlnx-dri)
   + https://github.com/ikwzm/mesa-xlnx/tree/mesa-xlnx-dri_22.0.5-0ubuntu0.1
 * [Build Linux Kernel 5.10.120-zynqmp-fpga-trial](doc/build/linux-5.10.120-zynqmp-fpga-trial.md)

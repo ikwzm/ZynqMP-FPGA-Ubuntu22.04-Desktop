@@ -70,7 +70,7 @@ root@ubuntu-fpga:/# apt install -y ubuntu-desktop
 #### Install ZynqMP-FPGA-Xserver
 
 ```console
-root@ubuntu-fpga:/# dpkg -i /home/fpga/debian/xserver-xorg-video-armsoc-xilinx_1.5-trial-12_arm64.deb
+root@ubuntu-fpga:/# dpkg -i /home/fpga/debian/xserver-xorg-video-armsoc-xilinx_1.5-trial-13_arm64.deb
 root@ubuntu-fpga:/# cp      /home/fpga/debian/xorg.conf /etc/X11
 ```
 
