@@ -1,4 +1,4 @@
-## Install Ubuntu 22.04(Desktop) to Kv260
+## Install Ubuntu 22.04(Desktop) to Kr260
 
 ### Downlowd from github
 
@@ -12,12 +12,12 @@ shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.1.0
 
 ### File Description
 
- * target/Kv260/
+ * target/Kr260/
    + boot/
      - boot.scr                                                    : Stage Script file
      - uEnv.txt                                                    : U-Boot environment variables for linux boot
-     - devicetree-5.15.108-zynqmp-fpga-trial-kv260-revB.dtb        : Linux Device Tree Blob
-     - devicetree-5.15.108-zynqmp-fpga-trial-kv260-revB.dts        : Linux Device Tree Source
+     - devicetree-5.15.108-zynqmp-fpga-trial-kr260-revB.dtb        : Linux Device Tree Blob
+     - devicetree-5.15.108-zynqmp-fpga-trial-kr260-revB.dts        : Linux Device Tree Source
  * files/
    + vmlinuz-5.15.108-zynqmp-fpga-trial-2                          : Linux Kernel Image
  * ubuntu22.04-desktop-rootfs.tgz.files/                           : Ubuntu 22.04 Desktop Root File System
@@ -38,7 +38,7 @@ shell# mount /dev/sdc2 /mnt/usb2
 #### Make Boot Partition
 
 ```console
-shell# cp target/Kv260/boot/* /mnt/usb1
+shell# cp target/Kr260/boot/* /mnt/usb1
 shell# gzip -d -c files/vmlinuz-5.15.108-zynqmp-fpga-trial-2 > /mnt/usb1/image-5.15.108-zynqmp-fpga-trial
 ```
 

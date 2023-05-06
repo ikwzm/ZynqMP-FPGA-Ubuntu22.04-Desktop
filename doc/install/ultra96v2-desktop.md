@@ -5,9 +5,9 @@
 **Note: Downloading the entire repository is time consuming, so download only the branch you need.**
 
 ```console
-shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/archive/refs/tags/v1.0.0.tar.gz
-shell$ tar xfz v1.0.0.tar.gz
-shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.0.0
+shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/archive/refs/tags/v1.1.0.tar.gz
+shell$ tar xfz v1.1.0.tar.gz
+shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.1.0
 ```
 
 ### File Description
@@ -16,10 +16,10 @@ shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.0.0
    + boot/
      - boot.bin                                                    : Stage 1 Boot Loader
      - uEnv.txt                                                    : U-Boot environment variables for linux boot
-     - devicetree-5.10.120-zynqmp-fpga-trial-ultra96v2.dtb         : Linux Device Tree Blob   
-     - devicetree-5.10.120-zynqmp-fpga-trial-ultra96v2.dts         : Linux Device Tree Source
+     - devicetree-5.15.108-zynqmp-fpga-trial-ultra96v2.dtb         : Linux Device Tree Blob   
+     - devicetree-5.15.108-zynqmp-fpga-trial-ultra96v2.dts         : Linux Device Tree Source
  * files/
-   + vmlinuz-5.10.120-zynqmp-fpga-trial-16                         : Linux Kernel Image
+   + vmlinuz-5.15.108-zynqmp-fpga-trial-2                          : Linux Kernel Image
  * ubuntu22.04-desktop-rootfs.tgz.files/                           : Ubuntu 22.04 Desktop Root File System
    + x00 .. x15                                                    : (splited files)
  
@@ -39,7 +39,7 @@ shell# mount /dev/sdc2 /mnt/usb2
 
 ```console
 shell# cp target/Ultra96-V2/boot/* /mnt/usb1
-shell# gzip -d -c files/vmlinuz-5.10.120-zynqmp-fpga-trial-16 > /mnt/usb1/image-5.10.120-zynqmp-fpga-trial
+shell# gzip -d -c files/vmlinuz-5.15.108-zynqmp-fpga-trial-2 > /mnt/usb1/image-5.15.108-zynqmp-fpga-trial
 ```
 
 #### Make RootFS Partition
