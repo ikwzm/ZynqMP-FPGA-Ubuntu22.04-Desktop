@@ -1,4 +1,4 @@
-## Install Ubuntu 22.04(Desktop) to Ultra96
+## Install Ubuntu 22.04(Desktop) to Kr260
 
 ### Downlowd from github
 
@@ -12,12 +12,12 @@ shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.1.0
 
 ### File Description
 
- * target/Ultra96/
+ * target/Kr260/
    + boot/
-     - boot.bin                                                    : Stage 1 Boot Loader
+     - boot.scr                                                    : Stage Script file
      - uEnv.txt                                                    : U-Boot environment variables for linux boot
-     - devicetree-5.15.108-zynqmp-fpga-trial-ultra96.dtb           : Linux Device Tree Blob   
-     - devicetree-5.15.108-zynqmp-fpga-trial-ultra96.dts           : Linux Device Tree Source
+     - devicetree-5.15.108-zynqmp-fpga-trial-kr260-revB.dtb        : Linux Device Tree Blob
+     - devicetree-5.15.108-zynqmp-fpga-trial-kr260-revB.dts        : Linux Device Tree Source
  * files/
    + vmlinuz-5.15.108-zynqmp-fpga-trial-2                          : Linux Kernel Image
  * ubuntu22.04-desktop-rootfs.tgz.files/                           : Ubuntu 22.04 Desktop Root File System
@@ -38,7 +38,7 @@ shell# mount /dev/sdc2 /mnt/usb2
 #### Make Boot Partition
 
 ```console
-shell# cp target/Ultra96/boot/* /mnt/usb1
+shell# cp target/Kr260/boot/* /mnt/usb1
 shell# gzip -d -c files/vmlinuz-5.15.108-zynqmp-fpga-trial-2 > /mnt/usb1/image-5.15.108-zynqmp-fpga-trial
 ```
 
@@ -53,31 +53,7 @@ shell# (cat ubuntu22.04-desktop-rootfs.tgz.files/*) | tar xfz - -C /mnt/usb2
 ```console
 shell# mkdir /mnt/usb2/mnt/boot
 shell# cat <<EOT >> /mnt/usb2/etc/fstab
-/dev/mmcblk0p1	/mnt/boot	auto	defaults	0	0
-EOT
-```
-
-#### Setup WiFi
-
-The Ultra96/Ultra96-V2 connects to your network through WiFi.
-It may be better to create a configuration file on the host side in advance and write it to RootFS.
-Of cause, you can boot Ultra96/Ultra96-V2 later and configure it there.
-
-  * ssid: ssssssss
-  * passphrase: ppppppppp
-
-```console
-shell# cat <<EOT > /mnt/usb2/etc/netplan/99-network-config.yaml
-network:
-  version: 2
-  renderer: NetworkManager
-  wifis:
-    wlan0:
-      optional: true
-      access-points:
-        "ssssssss" :
-            password: "ppppppppp"
-      dhcp4: true
+/dev/sda1	/mnt/boot	auto	defaults	0	0
 EOT
 ```
 
@@ -89,7 +65,7 @@ If you want to change the system console, change the "linux_boot_args_console" v
 
 ```text:/mnt/usb1/uEnv.txt
 
-linux_boot_args_console=console=ttyPS0,115200
+linux_boot_args_console=console=ttyPS1,115200
 
 ```
 
