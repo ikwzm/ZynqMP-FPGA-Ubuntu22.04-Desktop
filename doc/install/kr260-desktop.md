@@ -21,7 +21,7 @@ shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.1.0
  * files/
    + vmlinuz-5.15.108-zynqmp-fpga-trial-2                          : Linux Kernel Image
  * ubuntu22.04-desktop-rootfs.tgz.files/                           : Ubuntu 22.04 Desktop Root File System
-   + x00 .. x15                                                    : (splited files)
+   + x00 .. x16                                                    : (splited files)
  
 ### Format SD-Card
 
@@ -53,7 +53,7 @@ shell# (cat ubuntu22.04-desktop-rootfs.tgz.files/*) | tar xfz - -C /mnt/usb2
 ```console
 shell# mkdir /mnt/usb2/mnt/boot
 shell# cat <<EOT >> /mnt/usb2/etc/fstab
-/dev/mmcblk1p1	/mnt/boot	auto	defaults	0	0
+/dev/sda1	/mnt/boot	auto	defaults	0	0
 EOT
 ```
 
