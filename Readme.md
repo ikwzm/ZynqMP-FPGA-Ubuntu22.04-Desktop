@@ -57,7 +57,7 @@ For Linux Kernel and Ubuntu22.04 RootFS, please refer to the respective release 
 
 | Release  | Released  | Ubuntu Version | Linux Kernel Version           | Release Tag |
 |:---------|:----------|:---------------|:-------------------------------|:------------|
-| v1.1.0   | 2023-5-6  | Ubuntu 22.04.2 | 5.15.108-zynqmp-fpga-trial-2   | [v1.1.0](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/tree/v1.1.0)
+| v1.1.1   | 2023-5-9  | Ubuntu 22.04.2 | 5.15.108-zynqmp-fpga-trial-2   | [v1.1.1](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/tree/v1.1.1)
 | v1.0.0   | 2022-9-30 | Ubuntu 22.04.1 | 5.10.120-zynqmp-fpga-trial-16  | [v1.0.0](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/tree/v1.0.0)
 
 
