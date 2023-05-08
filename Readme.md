@@ -49,6 +49,9 @@ This Repository provides a Ubuntu22.04-Desktop(use GUI) for Zynq MPSoC.
   + Installed dri xlnx (libgl1-mesa-xlnx-dri)
   + Installed ruby python python3
   + Installed Other package list -> [files/ubuntu22.04-desktop-dpkg-list.txt](files/ubuntu22.04-desktop-dpkg-list.txt)
+* FPGA Device Drivers and Services
+  + [fclkcfg    (FPGA Clock Configuration Device Driver)](https://github.com/ikwzm/fclkcfg)
+  + [u-dma-buf  (User space mappable DMA Buffer)](https://github.com/ikwzm/udmabuf)
 
 Install
 ------------------------------------------------------------------------------------
