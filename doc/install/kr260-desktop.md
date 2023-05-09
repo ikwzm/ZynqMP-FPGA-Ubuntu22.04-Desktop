@@ -5,9 +5,9 @@
 **Note: Downloading the entire repository is time consuming, so download only the branch you need.**
 
 ```console
-shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/archive/refs/tags/v1.1.0.tar.gz
-shell$ tar xfz v1.1.0.tar.gz
-shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.1.0
+shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/archive/refs/tags/v1.1.2.tar.gz
+shell$ tar xfz v1.1.2.tar.gz
+shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.1.2
 ```
 
 ### File Description
@@ -22,6 +22,13 @@ shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.1.0
    + vmlinuz-5.15.108-zynqmp-fpga-trial-2                          : Linux Kernel Image
  * ubuntu22.04-desktop-rootfs.tgz.files/                           : Ubuntu 22.04 Desktop Root File System
    + x00 .. x16                                                    : (splited files)
+ * debian/
+   + linux-image-5.15.108-zynqmp-fpga-trial_5.15.108-zynqmp-fpga-trial-2_arm64.deb   : Linux Image Package
+   + linux-headers-5.15.108-zynqmp-fpga-trial_5.15.108-zynqmp-fpga-trial-2_arm64.deb : Linux Headers Package
+   + libgl1-mesa-xlnx-dri_22.2.5-0ubuntu0.1~22.04.1_arm64.deb      : Mesa Dri Xlnx Driver Package
+   + xserver-xorg-video-armsoc-xilinx_1.5-trial-13_arm64.deb       : X.org Graphics Driver Package
+   + fclkcfg-5.15.108-zynqmp-fpga-trial_1.7.2-1_arm64.deb          : fclkcfg(1.7.2) Device Driver and Services Package
+   + u-dma-buf-5.15.108-zynqmp-fpga-trial_4.4.1-0_arm64.deb        : u-dma-buf(4.4.1) Device Driver and Services Package
  
 ### Format SD-Card
 
@@ -46,6 +53,7 @@ shell# gzip -d -c files/vmlinuz-5.15.108-zynqmp-fpga-trial-2 > /mnt/usb1/image-5
 
 ```console
 shell# (cat ubuntu22.04-desktop-rootfs.tgz.files/*) | tar xfz - -C /mnt/usb2
+shell# cp debian/* /mnt/usb2/home/fpga/debian
 ```
 
 #### Add boot partition mount position to /etc/fstab
