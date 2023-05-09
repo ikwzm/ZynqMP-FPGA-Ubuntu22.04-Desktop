@@ -5,9 +5,9 @@
 **Note: Downloading the entire repository is time consuming, so download only the branch you need.**
 
 ```console
-shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/archive/refs/tags/v1.1.1.tar.gz
-shell$ tar xfz v1.1.1.tar.gz
-shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.1.1
+shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/archive/refs/tags/v1.1.2.tar.gz
+shell$ tar xfz v1.1.2.tar.gz
+shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.1.2
 ```
 
 ### File Description
