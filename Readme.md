@@ -104,3 +104,5 @@ Build
   + https://github.com/ikwzm/mesa-xlnx/tree/mesa-xlnx-22.2.5-0ubuntu0.1-22.04.1
 * [Build Linux Kernel 5.15.108-zynqmp-fpga-trial](doc/build/linux-5.15.108-zynqmp-fpga-trial.md)
 * [Build Ubuntu 22.04 Desktop RootFS](doc/build/ubuntu22.04-desktop.md)
+* Build Ubuntu 22.04 Console RootFS
+  + https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/tree/v1.1.0
