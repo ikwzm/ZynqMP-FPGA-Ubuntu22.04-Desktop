@@ -93,6 +93,6 @@ Build
 * Build Debian Package for ddx xlnx (xserver-xorg-video-armsoc-xilinx)
   + https://github.com/ikwzm/xf86-video-armsoc-xilinx/tree/v1.5-trial-13
 * Build Debian Package for dri xlnx (libgl1-mesa-xlnx-dri)
-  + https://github.com/ikwzm/mesa-xlnx/tree/mesa-xlnx-22.2.5-0ubuntu0.1-22.04.1
+  + https://github.com/ikwzm/mesa-xlnx/tree/mesa-xlnx-dri_22.2.5-0ubuntu0.1-22.04.1
 * [Build Linux Kernel 5.15.108-zynqmp-fpga-trial](doc/build/linux-5.15.108-zynqmp-fpga-trial.md)
 * [Build Ubuntu 22.04 Desktop RootFS](doc/build/ubuntu22.04-desktop.md)
