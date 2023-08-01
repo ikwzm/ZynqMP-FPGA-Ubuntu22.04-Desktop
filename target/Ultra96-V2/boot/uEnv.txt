@@ -3,8 +3,8 @@
 #  * linux_kernel_image : Linux Kernel Image File Name
 #  * linux_fdt_image    : Linux Device Tree Blob File Name
 ########################################################################
-linux_kernel_image=image-5.15.108-zynqmp-fpga-trial
-linux_fdt_image=devicetree-5.15.108-zynqmp-fpga-trial-ultra96v2.dtb
+linux_kernel_image=image-6.1.42-zynqmp-fpga-trial
+linux_fdt_image=devicetree-6.1.42-zynqmp-fpga-trial-ultra96v2.dtb
 
 ########################################################################
 # Linux Boot Argments
