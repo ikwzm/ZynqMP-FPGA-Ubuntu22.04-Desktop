@@ -3,6 +3,7 @@
 export distro=jammy
 export LANG=C
 apt update
+apt -y upgrade
 
 #### Install Ubuntu Desktop
 
@@ -15,7 +16,7 @@ cp      /home/fpga/debian/xorg.conf /etc/X11
 
 #### Install libgl1-mesa for Lima
 
-dpkg -i /home/fpga/debian/libgl1-mesa-xlnx-dri_22.2.5-0ubuntu0.1~22.04.1_arm64.deb
+dpkg -i /home/fpga/debian/libgl1-mesa-xlnx-dri_22.2.5-0ubuntu0.1~22.04.3_arm64.deb
 
 #### Setup DRM Lima Driver
 

@@ -24,8 +24,8 @@
 #### Download ZynqMP-FPGA-Ubuntu22.04-Console
 
 ```console
-shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/archive/refs/tags/v1.1.2.tar.gz
-shell$ tar xfz v1.1.2.tar.gz
+shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/archive/refs/tags/v1.2.0.tar.gz
+shell$ tar xfz v1.2.0.tar.gz
 ```
 
 #### Prepare 
@@ -34,7 +34,7 @@ shell$ tar xfz v1.1.2.tar.gz
 shell# export targetdir=ubuntu22.04-desktop-rootfs
 shell# export distro=jammy
 shell# mkdir $PWD/$targetdir
-shell# (cat ZynqMP-FPGA-Ubuntu22.04-Console-1.1.2/ubuntu22.04-console-rootfs.tgz.files/*) | tar xfz - -C $PWD/$targetdir
+shell# (cat ZynqMP-FPGA-Ubuntu22.04-Console-1.2.0/ubuntu22.04-console-rootfs.tgz.files/*) | tar xfz - -C $PWD/$targetdir
 shell# cp debian/*.deb    $PWD/$targetdir/home/fpga/debian
 shell# cp files/xorg.conf $PWD/$targetdir/home/fpga/debian
 shell# cp scripts/upgrade-ubuntu22.04-desktop.sh $PWD/$targetdir
@@ -61,6 +61,7 @@ There are two ways
 root@ubuntu-fpga:/# export distro=jammy
 root@ubuntu-fpga:/# export LANG=C
 root@ubuntu-fpga:/# apt update
+root@ubuntu-fpga:/# apt upgrade
 ````
 #### Install Ubuntu Desktop
 
@@ -78,7 +79,7 @@ root@ubuntu-fpga:/# cp      /home/fpga/debian/xorg.conf /etc/X11
 #### Install libgl1-mesa for Lima
 
 ```console
-root@ubuntu-fpga:/# dpkg -i /home/fpga/debian/libgl1-mesa-xlnx-dri_22.2.5-0ubuntu0.1~22.04.1_arm64.deb
+root@ubuntu-fpga:/# dpkg -i /home/fpga/debian/libgl1-mesa-xlnx-dri_22.2.5-0ubuntu0.1~22.04.3_arm64.deb
 ```
 
 #### Setup DRM Lima Driver
