@@ -1,0 +1,13 @@
+########################################################################
+#uenv: config_name   = kr260_revB
+#uenv: menu_title    = Boot linux-6.1.70-zynqmp-fpga-trial
+#uenv: menu_priority = -1
+########################################################################
+
+########################################################################
+# Linux Kernel Files
+#  * linux_kernel_image : Linux Kernel Image File Name
+#  * linux_fdt_image    : Linux Device Tree Blob File Name
+########################################################################
+linux_kernel_image=image-6.1.70-zynqmp-fpga-trial
+linux_fdt_image=devicetree-6.1.70-zynqmp-fpga-trial-kr260-revB.dtb
