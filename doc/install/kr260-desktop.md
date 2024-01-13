@@ -1,13 +1,13 @@
-## Install Ubuntu 22.04(Desktop) to Kr260
+## Install Ubuntu 22.04.3 LTS(Desktop) to Kr260
 
 ### Downlowd from github
 
 **Note: Downloading the entire repository is time consuming, so download only the branch you need.**
 
 ```console
-shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/archive/refs/tags/v1.2.0.tar.gz
-shell$ tar xfz v1.2.0.tar.gz
-shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.2.0
+shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop/archive/refs/tags/v3.0.0.tar.gz
+shell$ tar xfz v3.0.0.tar.gz
+shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-3.0.0
 ```
 
 ### File Description
@@ -16,19 +16,19 @@ shell$ cd ZynqMP-FPGA-Ubuntu22.04-Desktop-1.2.0
    + boot/
      - boot.scr                                                    : Stage Script file
      - uEnv.txt                                                    : U-Boot environment variables for linux boot
-     - devicetree-6.1.42-zynqmp-fpga-trial-kr260-revB.dtb          : Linux Device Tree Blob
-     - devicetree-6.1.42-zynqmp-fpga-trial-kr260-revB.dts          : Linux Device Tree Source
+     - devicetree-6.1.70-zynqmp-fpga-trial-kr260-revB.dtb          : Linux Device Tree Blob
+     - devicetree-6.1.70-zynqmp-fpga-trial-kr260-revB.dts          : Linux Device Tree Source
  * files/
-   + vmlinuz-6.1.42-zynqmp-fpga-trial-1                            : Linux Kernel Image
+   + vmlinuz-6.1.70-zynqmp-fpga-trial-2                            : Linux Kernel Image
  * ubuntu22.04-desktop-rootfs.tgz.files/                           : Ubuntu 22.04 Desktop Root File System
    + x00 .. x16                                                    : (splited files)
  * debian/
-   + linux-image-6.1.42-zynqmp-fpga-trial_6.1.42-zynqmp-fpga-trial-1_arm64.deb   : Linux Image Package
-   + linux-headers-6.1.42-zynqmp-fpga-trial_6.1.42-zynqmp-fpga-trial-1_arm64.deb : Linux Headers Package
-   + libgl1-mesa-xlnx-dri_22.2.5-0ubuntu0.1~22.04.3_arm64.deb      : Mesa Dri Xlnx Driver Package
+   + linux-image-6.1.70-zynqmp-fpga-trial_6.1.70-zynqmp-fpga-trial-2_arm64.deb   : Linux Image Package
+   + linux-headers-6.1.70-zynqmp-fpga-trial_6.1.70-zynqmp-fpga-trial-2_arm64.deb : Linux Headers Package
+   + libgl1-mesa-xlnx-dri_23.0.4-0ubuntu1~22.04.1_arm64.deb        : Mesa Dri Xlnx Driver Package
    + xserver-xorg-video-armsoc-xilinx_1.5-trial-13_arm64.deb       : X.org Graphics Driver Package
-   + fclkcfg-6.1.42-zynqmp-fpga-trial_1.7.2-1_arm64.deb            : fclkcfg(1.7.2) Device Driver and Services Package
-   + u-dma-buf-6.1.42-zynqmp-fpga-trial_4.5.0-0_arm64.deb          : u-dma-buf(4.4.1) Device Driver and Services Package
+   + fclkcfg-6.1.70-zynqmp-fpga-trial_1.7.3-1_arm64.deb            : fclkcfg(1.7.3) Device Driver and Services Package
+   + u-dma-buf-6.1.70-zynqmp-fpga-trial_4.5.2-0_arm64.deb          : u-dma-buf(4.5.2) Device Driver and Services Package
  
 ### Format SD-Card
 
@@ -46,7 +46,7 @@ shell# mount /dev/sdc2 /mnt/usb2
 
 ```console
 shell# cp target/Kr260/boot/* /mnt/usb1
-shell# gzip -d -c files/vmlinuz-6.1.42-zynqmp-fpga-trial-1 > /mnt/usb1/image-6.1.42-zynqmp-fpga-trial
+shell# gzip -d -c files/vmlinuz-6.1.70-zynqmp-fpga-trial-2 > /mnt/usb1/image-6.1.70-zynqmp-fpga-trial
 ```
 
 #### Make RootFS Partition
