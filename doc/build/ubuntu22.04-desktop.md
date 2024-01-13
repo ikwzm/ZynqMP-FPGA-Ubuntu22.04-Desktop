@@ -4,10 +4,10 @@
 
 #### Install Ubuntu 22.04(Console) to Ultra96/Ultra96-V2/Kv260/Kr260
 
- * [Ultra96](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/blob/v1.1.2/doc/install/ultra96-console.md)
- * [Ultra96-V2](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/blob/v1.1.2/doc/install/ultra96v2-console.md)
- * [Kv260](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/blob/v1.1.2/doc/install/kv260-console.md)
- * [Kr260](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/blob/v1.1.2/doc/install/kr260-console.md)
+ * [Ultra96](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/blob/v3.0.1/doc/install/ultra96-console.md)
+ * [Ultra96-V2](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/blob/v3.0.1/doc/install/ultra96v2-console.md)
+ * [Kv260](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/blob/v3.0.1/doc/install/kv260-console.md)
+ * [Kr260](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/blob/v3.0.1/doc/install/kr260-console.md)
 
 #### Setup Ultra96/Ultra96-V2/Kv260/Kr260 borad
 
@@ -24,8 +24,8 @@
 #### Download ZynqMP-FPGA-Ubuntu22.04-Console
 
 ```console
-shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/archive/refs/tags/v1.2.0.tar.gz
-shell$ tar xfz v1.2.0.tar.gz
+shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/archive/refs/tags/v3.0.1.tar.gz
+shell$ tar xfz v3.0.1.tar.gz
 ```
 
 #### Prepare 
@@ -34,7 +34,7 @@ shell$ tar xfz v1.2.0.tar.gz
 shell# export targetdir=ubuntu22.04-desktop-rootfs
 shell# export distro=jammy
 shell# mkdir $PWD/$targetdir
-shell# (cat ZynqMP-FPGA-Ubuntu22.04-Console-1.2.0/ubuntu22.04-console-rootfs.tgz.files/*) | tar xfz - -C $PWD/$targetdir
+shell# (cat ZynqMP-FPGA-Ubuntu22.04-Console-3.0.1/ubuntu22.04-console-rootfs.tgz.files/*) | tar xfz - -C $PWD/$targetdir
 shell# cp debian/*.deb    $PWD/$targetdir/home/fpga/debian
 shell# cp files/xorg.conf $PWD/$targetdir/home/fpga/debian
 shell# cp scripts/upgrade-ubuntu22.04-desktop.sh $PWD/$targetdir
@@ -79,7 +79,7 @@ root@ubuntu-fpga:/# cp      /home/fpga/debian/xorg.conf /etc/X11
 #### Install libgl1-mesa for Lima
 
 ```console
-root@ubuntu-fpga:/# dpkg -i /home/fpga/debian/libgl1-mesa-xlnx-dri_22.2.5-0ubuntu0.1~22.04.3_arm64.deb
+root@ubuntu-fpga:/# dpkg -i /home/fpga/debian/libgl1-mesa-xlnx-dri_23.0.4-0ubuntu1~22.04.1_arm64.deb
 ```
 
 #### Setup DRM Lima Driver
